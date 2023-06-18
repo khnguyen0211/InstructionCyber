@@ -2,3 +2,101 @@
 html,body{
     font-family: 'Work Sans', sans-serif;
 }
+
+.header__top {
+    font-size: 14px;
+    background-color: #ff4f81;
+}
+
+.header__top a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.header__top .header__left a:hover{
+    color: black !important;
+}
+
+.header__top .header__right a:hover{
+    background-color: #ff4f81;
+    border: 1px solid white;
+}
+
+.header__right a {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 0.25rem;
+}
+
+.navInstruction a {
+    color: black;
+}
+
+.navInstruction .navbar-brand p:first-child {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.navInstruction .navbar-brand p:last-child {
+    color: #ff4f81;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.navInstruction .nav-item {
+    margin: 0 15px;
+}
+
+.navInstruction .nav-item::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ff4f81;
+    display: block;
+    transition: all 0.5s;
+}
+
+.navInstruction .nav-item:hover::after {
+    width: 100%;
+}
+
+.navInstruction .nav-item:hover .nav-link{
+    color: #ff4f81;
+    transition: all 0.5s;
+}
+
+.navInstruction .nav-link {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbarElement .nav-item.active .nav-link{
+    color: #ff4f81;
+}
+
+.navbarElement .nav-item.active::after{
+    width: 100%;
+}
+
+.navbarElement .nav-item.dropdown .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbarElement .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbarElement .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #ff4f81;
+    background-color: transparent;
+}
